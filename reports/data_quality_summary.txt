@@ -1,0 +1,45 @@
+DAY 1 DATA QUALITY SUMMARY
+
+Task 1-- Datasets Loaded
+
+-> Total datasets loaded: 10
+-> All datasets were successfully read using Pandas.
+
+Task 2-- Data Structure Review
+
+-> Dataset dimensions were reviewed using .shape.
+-> Column data types were reviewed using .dtypes.
+-> Sample records were inspected using .head().
+
+Task 3-- Data Quality Checks
+
+-> Missing values were checked in all datasets.
+-> Duplicate rows were checked in all datasets.
+-> Date columns were observed and reviewed for datatype consistency.
+
+## Observations
+
+* Some date columns were loaded as str datatype and may require conversion to datetime during data cleaning.
+* Missing values were identified in 04_monthly_sip_inflows.
+* NAV values were generally loaded as numeric (float64) datatype.
+
+Task 4-- API Data Ingestion
+
+-> Successfully fetched live NAV data for HDFC Top 100 Direct (AMFI Code: 125497).
+-> Successfully fetched NAV data for 5 additional mutual fund schemes.
+-> API responses were converted to CSV format and stored in data/raw.
+
+Task 5-- Fund Master Review
+
+-> Fund houses, categories, sub-categories and risk categories were explored.
+-> AMFI codes were identified as the primary scheme identifier.
+
+Task 6-- AMFI Validation
+
+-> AMFI codes from 01_fund_master.csv were compared with 02_nav_history.csv.
+-> Validation completed and results documented in day1_observation.txt.
+
+## Conclusion
+
+Initial data ingestion and quality assessment were completed successfully.
+The datasets are ready for further cleaning, transformation and exploratory analysis in the next phase of the project.

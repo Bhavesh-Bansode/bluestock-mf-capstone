@@ -1,0 +1,36 @@
+### DATA INGESTION ###
+
+fund_master.csv
+--> launch_date is of str type
+
+02_nav_history.csv
+--> date is of str type
+
+03_aum_by_fund_house.csv
+--> date is of str type
+
+04_monthly_sip_inflows.csv
+--> month is of str type
+--> Missing Values :
+    --> 04_monthly_sip_inflows.csv
+
+05_category_inflows.csv
+--> month is of str type
+
+09_portfolio_holdings.csv
+--> portfolio_date is of str type
+
+10_benchmark_indices.csv
+--> date is of str type
+
+
+### FATCH NAV ###
+
+Observed AMFI code is a unique identifier assigned to each mutual fund scheme.
+It can be used to link fund master data with NAV history data.
+
+--> Validate AMFI codes 
+    --> Total AMFI codes in fund_master: 40
+    --> Total AMFI codes in nav_history: 40
+    --> Missing = 0
+    All AMFI codes validated successfully

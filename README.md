@@ -207,6 +207,7 @@ using Microsoft Power BI Desktop.
 
 ## Author
 
-Bluestock Mutual Fund Analytics Capstone Project
+Bhavesh Bansode
+Intern (Bluestock Fintech)
 
 Version: 1.0

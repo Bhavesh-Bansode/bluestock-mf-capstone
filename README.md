@@ -208,6 +208,5 @@ using Microsoft Power BI Desktop.
 ## Author
 
 Bhavesh Bansode
-Intern (Bluestock Fintech)
 
 Version: 1.0
